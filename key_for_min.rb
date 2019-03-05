@@ -7,5 +7,11 @@ def key_for_min_value(name_hash)
     if min_hash == []
       min_hash.push(k, v)
     else
-      if min_hash[k] < v
+      if min_hash[1] < v
+        min_hash[0] = k
+        min_hash[1] = v
+      end
+    end
+  end
+  min_hash[0]
 end
